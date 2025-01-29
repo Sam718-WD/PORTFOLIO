@@ -1,3 +1,11 @@
+let crs = document.querySelector("#custom-crs");
+let main = document.querySelector(".main");
+
+window.addEventListener("mousemove", function(dets){
+    crs.style.left = dets.clientX + "px";
+    crs.style.top = dets.clientY + "px";
+})
+
 function revealToSpan() {
   document
     .querySelectorAll(".reveal")
@@ -62,7 +70,7 @@ tl.from(".child span", {
     delay: -3,
   })
   .to(".row h1", {
-    left: 52,
+    left: "-160",
     duration: 0.9,
     delay: -3,
   })
@@ -78,29 +86,6 @@ tl.from(".child span", {
       smooth: true
   });
   }
-
-  function cardHoverEffect(){
-    document.querySelectorAll(".cnt")
-    .forEach(function(cnt){
-      let showingImage;
-   
-      cnt.addEventListener("mousemove", function(dets){
-        document.querySelector(".cursor").children[dets.target.dataset.index].style.opacity = 1;
-        showingImage = dets.target;
-        document.querySelector(".cursor").children[dets.target.dataset.index].style.transform = `translate(${dets.clientX}px , ${dets.clientY}px)`;
-        showingImage.style.filter = "grayscale(1)";
-   
-        document.querySelector(".work").style.backgroundColor = "#" +  dets.target.dataset.color;
-      });
-      
-      cnt.addEventListener("mouseleave", function(dets){
-        document.querySelector(".cursor").children[showingImage.dataset.index].style.opacity = 0; 
-        showingImage.style.filter = "grayscale(0)";
-
-        document.querySelector(".work").style.backgroundColor = "#fff";
-      });
-    });
-  }   
 
   locoInitialise();
   cardHoverEffect();

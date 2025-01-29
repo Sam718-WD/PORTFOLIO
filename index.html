@@ -1,122 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
-        </style>
-
-</head>
-<body>
-     <div class="main">
-        <div class="loader">
-            <div class="topheading">
-                <h5 class="reveal">Design Portfolio</h5>
-                <h5 class="reveal">&copy; 2024</h5>
-            </div>
-            <h1 class="reveal"><span>Samarth</span> <span>Kulkarni</span> <span>is</span> <span>a</span> </h1>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <div id="custom-crs"></div>
+    <div class="main">
+      <div class="loader">
+        <div class="topheading">
+          <h5 class="reveal">My Portfolio</h5>
+          <h5 class="reveal">&copy; 2024</h5>
         </div>
-        <div class="green"></div>
-        <div class="home"  data-scroll-container>
-            <div class="nav">
-                <a href="">Samarth Kulkarni
-                    <span id="line1" class="line"></span>
-                    <span id="line2" class="line"></span>
-                </a>
-                <a href="">Socials
-                    <span id="line1" class="line"></span>
-                    <span id="line2" class="line"></span>
-                </a>
-                <a href="">Projects
-                    <span id="line1" class="line"></span>
-                    <span id="line2" class="line"></span>
-                </a>
-                <a href="">Contact
-                    <span id="line1" class="line"></span>
-                    <span id="line2" class="line"></span>
-                </a>
-            </div>
-            <div class="row">
-                <h1>FullStack</h1>
-                <div class="text">
-                    <h5 style="font-size: 1.2vw;">Currently Available FOR</h5>
-                    <h5 style="font-size: 1.2vw;">FREELANCING WORK IN INDIA</h5>
-                </div>
-                <div class="text">
-                    <h5 style="font-size: 1.2vw;">My local Time 15:28</h5>
-                    <h5 style="font-size: 1.2vw;">GMT (+5:30)</h5>
-                </div>
-            </div>
-            <div class="second-row">
-                <h1><span class="vs-ani">Web</span>Developer</h1>
-            </div>
-            <div class="imagery">
-               <div class="imgleft">
-                <!-- Chnage this br tags later -->
-                   <h1>I'm Samarth Kulkarni a<br>
-                       <span>designer</span>  dedicated to crafting<br>
-                       beautiful and intuitive interfaces for mobile and web. I blend creativity with functionality to deliver experiences that are not only visually stunning but also seamless and user-friendly.<br>
-                       </h1>
-               </div>
-
-
-               <div class="imgright">
-                  <div class="imagecntr"></div>
-                  <div class="imagecntr"></div>
-                  <div class="imagecntr"></div>
-               </div>
-            </div>
-            
-            <div class="work">
-                <div class="work-row">
-                    <h1>Feat Wo<span>r</span>ks</h1>
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><g data-name="38-Arrow Down"><path d="M30 18v7a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5h6V0H7a7 7 0 0 0-7 7v18a7 7 0 0 0 7 7h18a7 7 0 0 0 7-7v-7z"/><path d="M8 14H6v11a1 1 0 0 0 1 1h12v-2H9.41l20.3-20.29-1.42-1.42L8 22.59z"/></g></svg>
-                </div>
-                <div class="images">
-                    <div class="cnt1 cnt">    
-                        <img data-color ="d7ddf2" data-index="0" data-scroll data-scroll-speed="-1.5" src="https://abhishekjha.me/aeizei.7edf201c.png" alt="">
-                    </div>
-                    <div class="cnt2 cnt">
-                        <img data-color ="bae0d4" data-index="1" data-scroll data-scroll-speed="-1.5" src="https://abhishekjha.me/display.835f9d62.png" alt="">  
-                    </div>
-                    <div class="cnt3 cnt">
-                        <img data-color="" data-index="2" data-scroll data-scroll-speed="-1.5" src="https://abhishekjha.me/quaive.6fc624fe.png" alt="">
-                    </div>
-                    <div class="cnt4 cnt">
-                        <img data-color="" data-index="2" data-scroll data-scroll-speed="-1.5" src="https://abhishekjha.me/visavia4.631e000e.png" alt="">
-                    </div>
-                    <div class="cnt5 cnt">
-                        <img data-color="" data-index="2" data-scroll data-scroll-speed="-1.5" src="https://abhishekjha.me/muteza.4faa619b.png" alt="">
-                    </div>
-                </div>
-                <div class="cursor">
-                  <div class="crow">
-                    <div class="ccircle"></div>
-                    <div class="ccapsule">
-                        Behance
-                    </div>
-                  </div>
-                  <div class="elem">
-                    <img src="https://i.pinimg.com/474x/e5/7d/c9/e57dc91eb1771c0ca85829fb385a86a9.jpg" alt="">
-                    <img src="https://i.pinimg.com/474x/ab/77/90/ab779042f3d9e553ab6920eb2e6e9ec2.jpg" alt="">
-                    <img src="https://i.pinimg.com/474x/ab/77/90/ab779042f3d9e553ab6920eb2e6e9ec2.jpg" alt="">
-                    <img src="https://i.pinimg.com/474x/ab/77/90/ab779042f3d9e553ab6920eb2e6e9ec2.jpg" alt="">
-                    <img src="https://i.pinimg.com/474x/ab/77/90/ab779042f3d9e553ab6920eb2e6e9ec2.jpg" alt="">
-                  </div>
-                </div>
-            </div>
+        <h1 class="reveal">
+          <span>Samarth</span> <span>Kulkarni</span> <span>is</span>
+          <span>a</span>
+        </h1>
+      </div>
+      <div class="green"></div>
+      <div class="home" data-scroll-container>
+        <div class="nav">
+          <a href=""
+            >Samarth Kulkarni
+            <span id="line1" class="line"></span>
+            <span id="line2" class="line"></span>
+          </a>
+          <a href=""
+            >Socials
+            <span id="line1" class="line"></span>
+            <span id="line2" class="line"></span>
+          </a>
+          <a target="_blank" href="https://github.com/Sam718-WD"
+            >Github
+            <span id="line1" class="line"></span>
+            <span id="line2" class="line"></span>
+          </a>
+          <a href=""
+            >Contact
+            <span id="line1" class="line"></span>
+            <span id="line2" class="line"></span>
+          </a>
         </div>
-    </div> 
-
+        <div class="row">
+          <h1><span>F</span>ullStack</h1>
+        </div>
+        <div class="second-row">
+          <h1><span class="vs-ani">Web</span>Developer</h1>
+        </div>
+        <div class="imagery">
+          <div class="imgleft">
+            <h1>
+              I'm Samarth Kulkarni a<br />
+              <span>designer</span> dedicated to crafting<br />
+              beautiful and intuitive interfaces for mobile and web. I blend
+              creativity with functionality to deliver experiences that are not
+              only visually stunning but also seamless and user-friendly.<br />
+            </h1>
+          </div>
+          <div class="imgright">
+            <div class="imagecntr"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
