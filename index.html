@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css"
@@ -24,27 +24,29 @@
   </head>
   <body>
     <div id="custom-crs"></div>
-    <div class="main">
+    <div class="main" data-scroll-container>
       <div class="loader">
         <div class="topheading">
           <h5 class="reveal">My Portfolio</h5>
-          <h5 class="reveal">&copy; 2024</h5>
+          <h5 class="reveal">&copy;2025</h5>
         </div>
         <h1 class="reveal">
-          <span>Samarth</span> <span>Kulkarni</span> <span>is</span>
+          <span>Samarth</span>
+          <span>Kulkarni</span>
+          <span>is</span>
           <span>a</span>
         </h1>
       </div>
       <div class="green"></div>
-      <div class="home" data-scroll-container>
+      <div class="page1">
         <div class="nav">
-          <a href=""
+          <a href="#About"
             >Samarth Kulkarni
             <span id="line1" class="line"></span>
             <span id="line2" class="line"></span>
           </a>
-          <a href=""
-            >Socials
+          <a href="#Skills"
+            >Skills
             <span id="line1" class="line"></span>
             <span id="line2" class="line"></span>
           </a>
@@ -53,33 +55,186 @@
             <span id="line1" class="line"></span>
             <span id="line2" class="line"></span>
           </a>
-          <a href=""
+          <a href="#Contact"
             >Contact
             <span id="line1" class="line"></span>
             <span id="line2" class="line"></span>
           </a>
         </div>
         <div class="row">
-          <h1><span>F</span>ullStack</h1>
+          <h1>FullStack</h1>
         </div>
         <div class="second-row">
           <h1><span class="vs-ani">Web</span>Developer</h1>
         </div>
-        <div class="imagery">
-          <div class="imgleft">
-            <h1>
-              I'm Samarth Kulkarni a<br />
-              <span>designer</span> dedicated to crafting<br />
-              beautiful and intuitive interfaces for mobile and web. I blend
-              creativity with functionality to deliver experiences that are not
-              only visually stunning but also seamless and user-friendly.<br />
-            </h1>
-          </div>
-          <div class="imgright">
-            <div class="imagecntr"></div>
+      </div>
+      <div class="page2">
+        <div class="skills" id="Skills">
+          <h1>Skills</h1>
+          <div class="technical-skills">
+            <div class="left">
+              <div class="Frontend">
+                <h2>Frontend Development</h2>
+                <a
+                  target="_blank"
+                  href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                  >HTML</a
+                >
+                <a
+                  target="_blank"
+                  href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                  >CSS</a
+                >
+                <a
+                  target="_blank"
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                  >JAVASCRIPT</a
+                >
+                <a target="_blank" href="https://tailwindcss.com/"
+                  >Tailwind CSS</a
+                >
+                <a target="_blank" href="https://react.dev/">React.js</a>
+                <a target="_blank" href="https://gsap.com/">GSAP</a>
+                <a target="_blank" href="https://www.npmjs.com/package/sheryjs"
+                  >Shery.js</a
+                >
+                <a
+                  target="_blank"
+                  href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design"
+                  >Responsive Web Design</a
+                >
+              </div>
+              <div class="Backend">
+                <h2>Backend Development</h2>
+                <a
+                  target="_blank"
+                  href="https://nodejs.org/en/learn/getting-started/introduction-to-nodejs"
+                  >Node.js</a
+                >
+                <a
+                  target="_blank"
+                  href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/Introduction"
+                  >Express.js</a
+                >
+                <a
+                  target="_blank"
+                  href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/mongoose"
+                  >MongoDB</a
+                >
+                <a
+                  target="_blank"
+                  href="https://expressjs.com/en/starter/generator.html"
+                  >Express Generator</a
+                >
+              </div>
+            </div>
+            <div class="right">
+              <div class="Other">
+                <h2>UI/UX & Design</h2>
+                <a href="">Figma</a>
+                <a href="">Canva</a>
+                <a href="">Website & Design Deconstruction</a>
+              </div>
+              <div class="Other">
+                <h2>AI & Tools</h2>
+                <a href="">AI (General Knowledge)</a>
+                <a href="">AI Tools</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <div class="page3" id="About">
+        <h1>About Me</h1>
+        <div class="about">
+          <h5>
+            Hi, I'm Samarth Kulkarni, a passionate Full-Stack Web Developer who
+            creates attractive, functional, and visually pleasing interfaces for
+            mobile and web. My expertise lies in crafting seamless digital
+            experiences with a strong focus on user experience, performance, and
+            creativity. I specialize in both frontend and backend development,
+            ensuring that every website I build is not only visually stunning
+            but also optimized for performance and functionality.
+          </h5>
+        </div>
+        <div class="experties">
+          <h3>Frontend Development:</h3>
+          <p>
+            I craft modern, responsive, and interactive UI using HTML, CSS,
+            JavaScript, Tailwind CSS, React.js, GSAP, and Shery.js.
+          </p>
+          <h3>Backend Development:</h3>
+          <p>
+            I build scalable web applications using Node.js, Express.js,
+            MongoDB, and REST APIs.
+          </p>
+          <h3>UI/UX & Design:</h3>
+          <p>
+            I focus on delivering pixel-perfect designs using Figma, Canva, and
+            design deconstruction techniques.
+          </p>
+          <h3>SEO & Performance:</h3>
+          <p>
+            I optimize websites for better search engine ranking and fast
+            loading speeds.
+          </p>
+          <h3>Version Control & Deployment:</h3>
+          <p>
+            I manage code effectively using Git & GitHub and ensure smooth
+            deployments.
+          </p>
+        </div>
+        <div class="projecs-experience">
+          <h3>Experience & Projects</h3>
+          <p>
+            I worked as a Frontend Developer on a freelancing project where I
+            collaborated with a backend team to build an online video editing
+            platform.
+          </p>
+          <p>
+            I’m currently developing AI Image Enhancer, a website where users
+            can upload images and get enhanced HD versions using AI.
+          </p>
+          <p>
+            I’ve taken on a pre-qualification project for an SEO-optimized
+            e-commerce website at Nio Equipment and Engineering.
+          </p>
+          <p>
+            I constantly build projects to improve my skills and explore new
+            technologies.
+          </p>
+        </div>
+      </div>
+      <div class="page4">
+        <div class="contact" id="Contact">
+          <h1>Contact Me</h1>
+          <div class="in-contact">
+            <div class="page4-left">
+              <h3>
+                <img src="mail.png" alt="" />samarthkulkarni7187@gmail.com
+              </h3>
+              <a
+                target="_blank"
+                href="https://discordapp.com/users/1232970980821962814"
+                ><img src="pngwing.com.png" alt="" />Discord</a
+              >
+            </div>
+            <div class="page4-right">
+              <a
+                id="resume"
+                target="_blank"
+                href="https://magenta-max-85.tiiny.site/"
+                >My Resume</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer-content">
+          <p>&copy;2025 Samarth Kulkarni | All Rights Reserved</p>
+        </div>
+      </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>

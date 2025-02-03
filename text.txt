@@ -1,0 +1,44 @@
+<div class="about-me">
+          <p class="info">
+            Hi, I'm Samarth Kulkarni, a passionate Full-Stack Web Developer who
+            creates attractive, functional, and visually pleasing interfaces for
+            mobile and web. My expertise lies in crafting seamless digital
+            experiences with a strong focus on user experience, performance, and
+            creativity.
+            I specialize in both frontend and backend development, ensuring that
+            every website I build is not only visually stunning but also
+            optimized for performance and functionality.
+          </p>
+    
+          <div class="expertise">
+           <h3> Frontend Development:</h3> I craft modern, responsive, and interactive UI
+            using HTML, CSS, JavaScript, Tailwind CSS, React.js, GSAP, and
+            Shery.js. 
+            <h3>Backend Development:</h3> I build scalable web applications
+            using Node.js, Express.js, MongoDB, and REST APIs.
+             <h3>UI/UX & Design:</h3> I
+            focus on delivering pixel-perfect designs using Figma, Canva, and
+            design deconstruction techniques. 
+            <h3>SEO & Performance:</h3> I optimize
+            websites for better search engine ranking and fast loading speeds.
+            <h3>Version Control & Deployment:</h3> I manage code effectively using Git &
+            GitHub and ensure smooth deployments.
+          </div>
+          <div class="projects">
+            <h3>Experience & Projects </h3>
+            <p>I worked as a Frontend Developer on a freelancing project where I
+              collaborated with a backend team to build an online video editing
+              platform.</p>
+            <p>I’m currently developing AI Image Enhancer, a website
+              where users can upload images and get enhanced HD versions using AI.</p>
+            <p>I’ve taken on a pre-qualification project for an SEO-optimized
+              e-commerce website at Nio Equipment and Engineering. </p>
+            <p>I constantly build projects to improve my skills and explore new technologies.</p>
+          </div>
+          <h5>
+            My
+            goal is to become a highly skilled full-stack developer, mastering
+            the latest web technologies while delivering engaging and
+            high-performance digital experiences.
+          </h5>
+        </div>

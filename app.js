@@ -58,7 +58,7 @@ tl.from(".child span", {
     ease: Expo.easeInOut,
   })
   .from(".second-row h1", {
-    top: -100,
+    top: 0,
     duration: 1.5,
     ease: Circ.easeInOut,
   })
@@ -82,12 +82,11 @@ tl.from(".child span", {
 
   function locoInitialise(){
     const scroll = new LocomotiveScroll({
-      el: document.querySelector('[data-scroll-container]'),
+      el: document.querySelector('.main'),
       smooth: true
   });
   }
-
+  
   locoInitialise();
-  cardHoverEffect();
-
+  
   
