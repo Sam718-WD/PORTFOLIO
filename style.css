@@ -1,6 +1,11 @@
 @font-face {
   font-family: Roboto;
-  src: url();
+  src: url(static/RobotoMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: Jersey;
+  src: url(Jersey10-Regular.ttf);
 }
 
 * {
