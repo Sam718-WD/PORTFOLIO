@@ -22,6 +22,12 @@ body {
   overflow-y: auto;
 }
 
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+
 .main {
   max-width: 100%;
   position: relative;
@@ -428,6 +434,7 @@ body {
   padding: 1vw 3vw;
   background-color: #14cf93;
   border-radius: 2vw;
+  /* text-align: center; */
 }
 
 .page4 h3{
@@ -444,7 +451,7 @@ body {
   height: 100%;
 }
 .page4-right{
-  width: 50%;
+  width: 100%;
   height: 100%;
   background-color: black;
   position: relative;
@@ -452,7 +459,8 @@ body {
 
 .page4-right a{
   position: absolute;
-  right: 0;
+  right: 10%;
+  top: -50px;
 }
 
 .footer {
@@ -475,11 +483,23 @@ body {
   font-size: 1vw;
 }
 
+.main, .page1, .page2, .page3, .page4, .footer {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+
 ::selection{
   color: #14cf93;
 }
 
+
+
 @media (min-width: 320px) and (max-width: 767px) {
+  .main{
+    width: 100%;
+  }
+
   .nav {
     padding: 0 3vw;
     flex-direction: column;
@@ -487,14 +507,14 @@ body {
   }
 
   .nav a {
-    padding: 1vw 2vw;
-    font-size: 3vw;
+    padding: 5vw 0vw;
+    font-size: 4vw;
     border: none;
     width: 100%;
     text-align: center;
     background-color: #333;
     color: #fff;
-    border-radius: 10px;
+    border-radius: 15px;
     margin-top: 2vw;
   }
 
@@ -508,7 +528,7 @@ body {
 
   .row h1 {
     margin-left: 50vw;
-    margin-top: 10vw;
+    margin-top: 35vw;
   }
 
   .second-row h1 {
@@ -595,7 +615,16 @@ body {
     padding: 2vw 3vw;
   }
 
+
   .about h5{
+    font-size: 4vw;
+  }
+
+  .experties h3{
+    font-size: 4vw;
+  }
+
+  .projecs-experience h3{
     font-size: 4vw;
   }
 
@@ -618,11 +647,6 @@ body {
     width: 100%;
     display: inline;
     height: fit-content;
-  }
-
-  .page4 a{
-    position: absolute;
-    right: 10%;
   }
   .experties p{
     font-size: 3vw;
