@@ -436,6 +436,7 @@ body {
 
 .in-contact{
   display: flex;
+  justify-content: space-around;
 }
 
 .page4-left{
@@ -609,9 +610,25 @@ body {
     text-align: center;
     height: fit-content;
   }
+
+  .page3 h5{
+    font-size: 4vw;
+  }
   .page4{
-    flex-direction: column;
+    width: 100%;
+    display: inline;
     height: fit-content;
+  }
+
+  .page4 a{
+    position: absolute;
+    right: 10%;
+  }
+  .experties p{
+    font-size: 3vw;
+  }
+  .projecs-experience p{
+    font-size: 3vw;
   }
 }
 
