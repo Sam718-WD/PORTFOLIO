@@ -18,18 +18,13 @@
 body {
   overflow-x: hidden;
   width: 100%;
-<<<<<<< HEAD
-=======
-    overflow-x: hidden;
+  overflow-x: hidden;
   overflow-y: auto;
->>>>>>> 9625874735381377306935b192d79924ae4a7522
 }
 
 .main {
   max-width: 100%;
   position: relative;
-  overflow-x: hidden;
-  overflow-y: auto;
 }
 
 #custom-crs {
@@ -484,11 +479,6 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  body{
-    overflow-x: hidden;
-    overflow-y: hidden;
-  }
-
   .nav {
     padding: 0 3vw;
     flex-direction: column;
@@ -622,10 +612,6 @@ body {
   .page4{
     flex-direction: column;
     height: fit-content;
-  }
-
-  .page4 .contact{
-
   }
 }
 
