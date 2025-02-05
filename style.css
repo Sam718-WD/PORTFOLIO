@@ -16,13 +16,15 @@
 }
 
 body {
+  overflow-x: hidden;
   width: 100%;
-  overflow: hidden;
 }
 
 .main {
-  width: 100%;
+  max-width: 100%;
   position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 #custom-crs {
@@ -160,13 +162,6 @@ body {
   width: 100%;
   min-height: 100vh;
 }
-
-.page {
-  width: 100%;
-  min-height: 100vh;
-  background-color: #000000;
-}
-
 .row {
   margin-top: 5vw;
   display: flex;
@@ -266,7 +261,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
-  font-size: 2vw;
+  font-size: 2.3vw;
   color: #333;
   font-family: "Jersey 10";
   transition: all cubic-bezier(0.23, 1, 0.320, 1) 1s;
@@ -351,7 +346,7 @@ body {
 
 .about{
   width: 100%;
-  height: 50vh;
+  /* height: fit-content; */
   background-color: #333;
   padding: 5vw 2vw;
 }
@@ -377,7 +372,7 @@ body {
 
 .projecs-experience{
   width: 100%;
-  height: 50vh;
+  height: fit-content;
   padding: 5vw 2vw;
   background-color: #333;
   color: #fff;
@@ -400,7 +395,6 @@ body {
 .page4 h1{
   font-size: 5vw;
   color: #000;
-  letter-spacing: -6px;
 }
 
 .page4 img{
@@ -436,6 +430,10 @@ body {
   border-radius: 2vw;
 }
 
+.page4 h3{
+  font-size: 2vw;
+}
+
 .in-contact{
   display: flex;
 }
@@ -467,20 +465,25 @@ body {
 }
 
 .footer-content {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .footer p {
   margin: 0;
-  font-size: 14px;
+  font-size: 1vw;
 }
 
 ::selection{
   color: #14cf93;
 }
 
-@media (min-width: 340px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
+  body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+
   .nav {
     padding: 0 3vw;
     flex-direction: column;
@@ -488,7 +491,7 @@ body {
   }
 
   .nav a {
-    padding: 1vw 0;
+    padding: 1vw 2vw;
     font-size: 3vw;
     border: none;
     width: 100%;
@@ -513,17 +516,13 @@ body {
   }
 
   .second-row h1 {
-    margin-top: 3vw;
+    margin-top: 10vw;
     text-align: center;
     margin-top: 0;
   }
 
   .second-row .vs-ani {
     left: -150%;
-  }
-
-  .cursor {
-    display: none;
   }
   .skills{
     flex-direction: column;
@@ -551,15 +550,44 @@ body {
   .Frontend{
     height: 100%;
     overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4vw 0;
+  }
+
+  .Frontend a{
+    font-size: 2rem;
   }
 
   .Backend{
     height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4vw 0;
+  }
+
+  .Backend a{
+    font-size: 2rem;
   }
 
   .Other{
     height: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4vw 0;
+    text-align: center;
   }
+
+  .Other a{
+    font-size: 2rem;
+    text-align: center;
+  }
+
   .technical-skills{
     flex-direction: column;
   }
@@ -567,7 +595,33 @@ body {
     display: inline;
     text-align: center;
   }
-  
+  .about{
+    padding: 2vw 3vw;
+  }
+
+  .about h5{
+    font-size: 4vw;
+  }
+
+  .page1{
+    height: fit-content;
+  }
+  .page2{
+    flex-direction: column;
+  }
+  .page3{
+    flex-direction: column;
+    text-align: center;
+    height: fit-content;
+  }
+  .page4{
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .page4 .contact{
+
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -578,6 +632,10 @@ body {
 
   .nav a {
     font-size: 2vw;
+  }
+
+  .row h1{
+    margin-left: 15vw;
   }
 
   .loader h1 {
@@ -604,6 +662,7 @@ body {
   .Frontend{
     height: 100%;
     overflow-y: scroll;
+    text-align: center;
   }
 
   .Backend{
@@ -612,10 +671,17 @@ body {
   .technical-skills{
     display: grid;
   }
-
+  .page2{
+    position: absolute;
+    top: 30%;
+  }
 }
 
 @media (max-width: 1024px) {
+
+  .main{
+    overflow: hidden;
+  }
   .nav {
     height: 95px;
     padding: 0 5vw;
@@ -644,6 +710,9 @@ body {
 
   .cursor {
     width: 12vw;
+  }
+  .about h5{
+    font-size: 2.2vw;
   }
 }
 
